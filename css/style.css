@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;700&family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400;500&display=swap');
+
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--secondary-text-color);
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    margin-top: 3rem;
+}
+
+
+/* UTILITY CLASSES */
+
+.container {
+    max-width: 80%;
+    margin-inline: auto;
+    padding: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.primary-btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 6px;
+    padding: 12px 20px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+
+.primary-btn:hover {
+    background-color: var(--accent-color-dark);
+}
+
+
+/* NAVBAR */
+
+.nav-container {
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 70px;
+}
+
+.top-nav-link {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ABOUT */
+
+.about-container {
+    justify-content: center;
+    gap: 80px;
+}
+
+.about-me {
+    max-width: 40vw;
+}
+
+.about-me h1 {
+    color: var(--primary-text-color);
+}
+
+.about-me p {
+    color: var(--secondary-text-color);
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+    margin-top: 0.3rem;
+}
+
+.hire-btn {
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.my-img img {
+    width: 100%;
+}
+
+/* SKILLS */
+
+.skills-container {
+    text-align: center;
+}
+
+.skill-head {
+    padding: 10px 0;
+}
+
+.skill-showcase {
+    margin: 15px 0;
+}
+
+.skill-showcase img {
+    width: 43px;
+}
+
+/* SERVICES */
+
+.services-container {
+    text-align: center;
+}
+
+.service-head {
+    padding: 10px 0;
+}
+
+.service-showcase {
+    padding: 20px 0;
+}
+
+.service {
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+.service-2 {
+    flex-direction: row-reverse;
+}
+
+.service-img {
+    max-width: 45%;
+}
+
+.service-img img {
+    width: 100%;
+}
+
+.service-info {
+    flex-direction: column;
+    max-width: 45%;
+    padding: 20px 0;
+}
+
+.service-info p {
+    font-family: 'Mukta Vaani', sans-serif;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.read-btn {
+    margin: 15px 0;
+}
+
+/* CONTACT */
+
+.contact-container {
+    text-align: center;
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+.contact-head {
+    padding: 10px 0;
+}
+
+.map {
+    padding: 10px 0;
+}
+
+.main-contact {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.main-contact p {
+    padding: 10px 0;
+}
+
+h4 i {
+    padding-right: 20px;
+}
+
+.address {
+    flex-direction: column;
+    /* border: 1px solid darkred; */
+    margin: 10px 0;
+    /* max-width: 40%; */
+}
+
+.call {
+    flex-direction: column;
+    /* border: 1px solid darkred; */
+    margin: 10px 0;
+}
+
+.mail {
+    flex-direction: column;
+    /* border: 1px solid darkred; */
+    margin: 10px 0;
+}
+
+
+/* SOCIAL MEDIA */
+
+
+.media-container {
+    text-align: center;
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+.media-head {
+    padding: 10px 0;
+}
+
+.my-socials {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.social {
+    color: #fff;
+    cursor: pointer;
+    width: 26%;
+    padding: 20px 10px;
+    margin: 20px 0;
+    background-color: hsla(220, 100%, 72%, 0.034);
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+.social p {
+    line-height: 30px;
+    margin: 0.5rem 0;
+}
+
+
+/* FOOTER */
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-family: 'Mukta Vaani', sans-serif;
+    color: var(--primary-text-color);
+}
